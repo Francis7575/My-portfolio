@@ -1,0 +1,491 @@
+@import './colors.scss';
+@import './typography.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color-body;
+}
+
+.container {
+    overflow: hidden;
+}
+
+header {
+    background-color: $color-black;
+}
+
+.header__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header-name-container {
+    background-image: linear-gradient(to right, $color-green, $color-green);
+    background-size: 100% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+}
+
+.header__name {
+    color: $color-white;
+    font-size: $fs-24;
+    font-size: clamp($fs-24, $fs-16 + 2.4vw, $fs-32);
+}
+
+#menuContainer {
+    position: absolute;
+    background-color: $color-darkGrey;
+    width: 100%;
+    padding: .8rem 0;
+    top: 67px;
+    left: 0;
+    z-index: 2;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    list-style: none;
+
+    & a {
+        color: $color-white;
+    }
+}
+
+#openMenu,
+#closeMenu {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#closeMenu,
+#menuContainer,
+.visually-hidden {
+    display: none;
+}
+
+.top__image__wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.top__image__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.oval__circle__left,
+.oval__circle__right {
+    position: absolute;
+}
+
+.oval__circle__left {
+    top: -14px;
+    left: -105px
+}
+
+.oval__circle__right {
+    bottom: -12px;
+    right: -39px;
+}
+
+.profile__image {
+    display: block;
+    max-width: 100%;
+    padding: 0 3rem;
+}
+
+.top_section {
+    border-bottom: 1px solid $color-white;
+    padding-bottom: 2rem;
+}
+
+.top__text__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.top_h1 {
+    text-align: center;
+    font-size: $fs-32;
+    font-size: clamp($fs-32, .77rem + 5.26vw, fs-88);
+    color: $color-white;
+    font-weight: 700;
+    line-height: 2.5rem;
+
+    & span {
+        background-image: linear-gradient(to right, $color-green, $color-green);
+        background-size: 100% 2px;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+.top_p {
+    font-size: $fs-16;
+    font-size: clamp($fs-16, .96rem + .19vw, $fs-18);
+    max-width: 21.43rem;
+    text-align: center;
+    color: $color-grey;
+    font-weight: 500;
+    line-height: 1.62rem;
+}
+
+.underline {
+    background-image: linear-gradient(to right, $color-green, $color-green);
+    background-size: 100% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    padding-bottom: .7rem;
+
+}
+
+.contact_link {
+    color: $color-white;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $color-green;
+    }
+}
+
+main {
+    margin-top: 2.7rem;
+}
+
+#skills {
+    position: relative;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid $color-white;
+
+
+    & h2 {
+        text-align: center;
+        color: $color-white;
+        font-size: $fs-28;
+        font-size: clamp($fs-28, .43rem + 5.64vw, $fs-88);
+    }
+}
+
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+    gap: 2.4rem 0;
+}
+
+.second__row {
+    justify-self: end;
+}
+
+.skills__item__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skills__current {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.skills__title {
+    color: $color-white;
+}
+
+.skills_second_header {
+    margin: 2.5rem 0;
+}
+
+.oval__one,
+.oval__two,
+.oval__three,
+.oval__four,
+.oval__five,
+.oval__six {
+    position: absolute;
+}
+
+.oval__one {
+    bottom: -45px;
+    right: 0;
+}
+
+.oval__two {
+    bottom: -60px;
+    right: 0;
+}
+
+.oval__three {
+    bottom: -75px;
+    right: 0;
+}
+
+#projects {
+    margin-top: 9rem;
+    padding: 0 1rem 4.5rem 1rem;
+}
+
+.projects__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects__header {
+    color: $color-white;
+    font-size: $fs-28;
+    font-size: clamp($fs-28, .43rem + 5.64vw, $fs-88);
+}
+
+.image__challenge {
+    display: block;
+    max-width: 100%;
+}
+
+.challenge__title {
+    text-transform: uppercase;
+    color: $color-white;
+    font-weight: 700;
+    line-height: 2rem;
+    font-size: $fs-22;
+    margin-top: 1.25rem;
+}
+
+.project__tools {
+    color: $color-grey;
+    font-size: $fs-16;
+    margin-top: .5rem;
+
+    & span {
+        margin-right: .5rem;
+    }
+}
+
+.projects__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    margin-top: 2.5rem;
+}
+
+.projects__links__container {
+    margin-top: 1rem;
+}
+
+.projects__links {
+    text-transform: uppercase;
+    color: $color-white;
+    margin-right: 1.2rem;
+
+    &:hover {
+        color: $color-green;
+    }
+}
+
+.footer {
+    position: relative;
+    background-color: $color-darkGrey;
+    padding: 3.75rem 1rem;
+}
+
+#contact {
+    border-bottom: 1px solid $color-white;
+    padding-bottom: 4rem;
+}
+
+.contact__top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.contact__header {
+    color: $color-white;
+    font-weight: 700;
+    font-size: $fs-28;
+    font-size: clamp($fs-28, .43rem + 5.64vw, $fs-88);
+}
+
+.contact__text {
+    color: $color-grey;
+    font-weight: 500;
+    line-height: 1.62rem;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3.12rem;
+}
+
+.oval__four {
+    bottom: 170px;
+    left: 0;
+    z-index: 2;
+
+}
+
+.oval__five {
+    bottom: 185px;
+    left: 0;
+    z-index: 2;
+
+}
+
+.oval__six {
+    bottom: 200px;
+    left: 0;
+    z-index: 2;
+
+}
+
+.contact__control input,
+.contact__control textarea {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $color-white;
+    padding-left: 1rem;
+    color: $color-white;
+}
+
+.contact__control input {
+    padding-bottom: 1rem;
+}
+
+.contact__control {
+    position: relative;
+}
+
+#textarea {
+    display: block;
+    resize: none;
+}
+
+::placeholder {
+    text-transform: uppercase;
+}
+
+.contact__btn__container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sendBtn {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2.286px;
+    color: $color-white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-green;
+    }
+}
+
+.footer__bottom__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 2.43rem;
+
+    & a {
+        color: $color-white;
+    }
+}
+
+.social__icons {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    & a:hover>svg>path {
+        fill: $color-green;
+    }
+}
+
+.error_message {
+    font-size: $fs-12;
+    text-align: end;
+    color: $color-invalid;
+    padding-top: .5rem;
+}
+
+.error_icon {
+    position: absolute;
+    bottom: 28px;
+    right: 0;
+}
+
+#textareaControlContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.success_message {
+    text-align: center;
+    font-size: $fs-12;
+    color: $color-green;
+    padding-top: 1.2rem;
+}
+
+#loadingIndicator {
+    display: none;
+    font-size: $fs-12;
+    padding-top: 2rem;
+    color: $color-yellow;
+    text-align: center;
+    font-weight: bold;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 4px;
+    right: 4px;
+    background: $color-white;
+    color: $color-black;
+    border: none;
+    padding: .25rem .34rem;
+
+    &:hover {
+        color: $color-grey;
+    }
+}

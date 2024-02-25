@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francis portfolio</title>
+    <link rel="stylesheet" href="/style-files/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__container" id="top">
+                <div class="header-name-container">
+                    <a href="#" class="header__name">Francis S.</a>
+                </div>
+
+                <nav>
+                    <div id="menuContainer">
+                        <ul>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__icons">
+                        <button id="openMenu">
+                            <img src="/assets/images/icon-hamburger.svg" alt="Open Menu" title="Open Menu">
+                        </button>
+                        <button id="closeMenu">
+                            <img src="/assets/images/icon-close.svg" alt="Close Menu" title="Close Menu">
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="top_section">
+                <div class="top__image__wrap">
+                    <div class="top__image__container">
+                        <img class="profile__image" src="/assets/images/profile-image.jpeg" alt="Profile Image">
+                    </div>
+                    <picture>
+                        <img class="oval__circle__left" src="/assets/images/oval-circle-left.svg" alt="">
+                        <img class="oval__circle__right" src="/assets/images/oval-circle-right.svg" alt="">
+                    </picture>
+                </div>
+
+                <div class="top__text__content">
+                    <h1 class="top_h1">Nice to meet you! I'm <span>Francis Sanchez</span>.</h1>
+                    <p class="top_p">
+                        Based in Canada, I'm a front-end developer passionate about building
+                        accessible web apps that users love.
+                    </p>
+                    <a href="https://wa.me/6723385312" target="_blank"
+                        class="contact_link underline top_contact">Contact Me
+                    </a>
+                </div>
+            </section>
+
+            <section id="skills">
+                <div class="skills_first_header">
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills__grid">
+                    <div class="skills__item__container html">
+                        <i class="fa-brands fa-html5 fa-2xl" style="color: #e44d26;"></i>
+                        <h3 class="skills__title">Html</h3>
+                    </div>
+
+                    <div class="skills__item__container css">
+                        <i class="fa-brands fa-css3-alt fa-2xl" style="color: #0c89e9;"></i>
+                        <h3 class="skills__title">Css</h3>
+                    </div>
+
+                    <div class="skills__item__container js">
+                        <i class="fa-brands fa-js fa-2xl" style="color: #FFD43B;"></i>
+                        <h3 class="skills__title">Javatscript</h3>
+                    </div>
+
+                    <div class="skills__item__container second__row sass">
+                        <i class="fa-brands fa-sass fa-2xl" style="color: #b10225;"></i>
+                        <h3 class="skills__title">Sass</h3>
+                    </div>
+
+                    <div class="skills__item__container second__row git">
+                        <i class="fa-brands fa-git-alt fa-2xl" style="color: #f05033;"></i>
+                        <h3 class="skills__title">Git</h3>
+                    </div>
+                </div>
+
+                <div class="skills_second_header">
+                    <h2>Diving into</h2>
+                </div>
+                <div class="skills__current">
+                    <div class="skills__item__container react">
+                        <i class="fa-brands fa-react fa-2xl" style="color: #264a87;"></i>
+                        <h3 class="skills__title">React</h3>
+                    </div>
+
+                    <div class="skills__item__container bootstrap">
+                        <i class="fa-brands fa-bootstrap fa-2xl" style="color: #9e419f;"></i>
+                        <h3 class="skills__title">Bootstrap</h3>
+                    </div>
+                </div>
+
+                <picture>
+                    <img class="oval__one" src="/assets/images/oval-one.svg" alt="">
+                    <img class="oval__two" src="/assets/images/oval-two.svg" alt="">
+                    <img class="oval__three" src="/assets/images/oval-three.svg" alt="">
+                </picture>
+                <audio id="skillsAudio" src="/assets/audio.mp3" loop></audio>
+            </section>
+
+            <section id="projects">
+                <div class="projects__top">
+                    <h2 class="projects__header">Projects</h2>
+                    <a href="https://wa.me/6723385312" target="_blank"
+                        class=" contact_link underline projects_contact">Contact me</a>
+                </div>
+
+                <div class="projects__container">
+                    <div class="projects__item first_project">
+                        <img class="image__challenge" src="/assets/images/challenge-one.png" alt="">
+                        <h3 class="challenge__title">E-learning landing page</h3>
+                        <p class="project__tools">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </p>
+                        <div class="projects__links__container">
+                            <a href="https://luxury-torte-ac831d.netlify.app" target="_blank"
+                                class="projects__links underline">View
+                                Project</a>
+                            <a href="https://github.com/Francis7575/Skilled-e-learning-landing-page" target="_blank"
+                                class="projects__links underline">View Code</a>
+                        </div>
+                    </div>
+
+                    <div class="projects__item second_project">
+                        <img class="image__challenge" src="/assets/images/challenge-two.png" alt="">
+                        <h3 class="challenge__title">Insure landing page</h3>
+                        <p class="project__tools">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </p>
+                        <div class="projects__links__container">
+                            <a href="https://dapper-churros-3bbead.netlify.app" target="_blank"
+                                class="projects__links underline">View
+                                Project</a>
+                            <a href="https://github.com/Francis7575/Insure-landing-page" target="_blank"
+                                class="projects__links underline">View Code</a>
+                        </div>
+                    </div>
+
+                    <div class="projects__item third_project">
+                        <img class="image__challenge" src="/assets/images/challenge-three.png" alt="">
+                        <h3 class="challenge__title">Huddle landing page</h3>
+                        <p class="project__tools">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </p>
+                        <div class="projects__links__container">
+                            <a href="https://marvelous-kitsune-5f4656.netlify.app" target="_blank"
+                                class="projects__links underline">View
+                                Project</a>
+                            <a href="https://github.com/Francis7575/Huddle-landing-page-with-alternating-feature-blocks"
+                                target="_blank" class="projects__links underline">View Code</a>
+                        </div>
+                    </div>
+
+                    <div class="projects__item four_project">
+                        <img class="image__challenge" src="/assets/images/challenge-four.png" alt="">
+                        <h3 class="challenge__title">Newsletter sign-up form</h3>
+                        <p class="project__tools">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </p>
+                        <div class="projects__links__container">
+                            <a href="https://beautiful-marshmallow-9feb73.netlify.app" target="_blank"
+                                class="projects__links underline">View Project</a>
+                            <a href="https://github.com/Francis7575/Newsletter-sign-up-form" target="_blank"
+                                class="projects__links underline">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <section id="contact">
+                <div class="contact__top">
+                    <h2 class="contact__header">Contact</h2>
+                    <p class="contact__text">
+                        I would love to hear about your project and how I could help. Please fill in the
+                        form, and I'll get back to you as soon as possible.
+                    </p>
+                </div>
+
+                <p id="loadingIndicator">Please wait, submitting...</p>
+                <form id="form" action="">
+                    <div class="form__container">
+                        <div class="contact__control">
+                            <label for="name" class="visually-hidden">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Name">
+                        </div>
+
+                        <div class="contact__control">
+                            <label for="email" class="visually-hidden">Email</label>
+                            <input id="email" name="email" type="text" placeholder="Email">
+                        </div>
+
+                        <div id="textareaControlContainer" class="contact__control">
+                            <label for="message" class="visually-hidden">Message</label>
+                            <textarea name="message" class="message" id="message" cols="30" rows="5"
+                                placeholder="Message"></textarea>
+                        </div>
+
+                        <div class="contact__btn__container">
+                            <button type="submit" id="sendBtn" class="underline">Send message</button>
+                        </div>
+
+                        <picture>
+                            <img class="oval__four" src="/assets/images/oval-four.svg" alt="">
+                            <img class="oval__five" src="/assets/images/oval-five.svg" alt="">
+                            <img class="oval__six" src="/assets/images/oval-six.svg" alt="">
+                        </picture>
+                    </div>
+                </form>
+            </section>
+
+            <div class="footer__bottom__container">
+                <a href="#">Francis Sanchez</a>
+                <div class="social__icons">
+                    <a href="https://github.com/Francis7575" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.84282 0.800049C4.40466 0.800049 0 5.20471 0 10.6429C0 14.9983 2.81751 18.6771 6.73003 19.9812C7.22217 20.0674 7.40672 19.7721 7.40672 19.5137C7.40672 19.2799 7.39442 18.5048 7.39442 17.6805C4.92141 18.1357 4.28163 17.0776 4.08477 16.524C3.97404 16.241 3.4942 15.3674 3.07588 15.1337C2.73138 14.9491 2.23924 14.4939 3.06358 14.4816C3.8387 14.4693 4.39236 15.1952 4.57691 15.4905C5.46277 16.9792 6.87767 16.5609 7.44363 16.3025C7.52976 15.6627 7.78813 15.2321 8.07111 14.986C5.88109 14.7399 3.59263 13.891 3.59263 10.1261C3.59263 9.05571 3.97404 8.16986 4.60152 7.48086C4.50309 7.23479 4.15859 6.2259 4.69995 4.87252C4.69995 4.87252 5.52428 4.61414 7.40672 5.8814C8.19415 5.65994 9.03079 5.54921 9.86743 5.54921C10.7041 5.54921 11.5407 5.65994 12.3281 5.8814C14.2106 4.60184 15.0349 4.87252 15.0349 4.87252C15.5763 6.2259 15.2318 7.23479 15.1333 7.48086C15.7608 8.16986 16.1422 9.04341 16.1422 10.1261C16.1422 13.9033 13.8415 14.7399 11.6514 14.986C12.0082 15.2936 12.3158 15.8842 12.3158 16.8069C12.3158 18.1234 12.3035 19.1815 12.3035 19.5137C12.3035 19.7721 12.4881 20.0797 12.9802 19.9812C14.9341 19.3216 16.632 18.0657 17.8349 16.3906C19.0378 14.7153 19.6851 12.7051 19.6856 10.6429C19.6856 5.20471 15.281 0.800049 9.84282 0.800049Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="https://www.frontendmentor.io/profile/Francis7575" target="_blank">
+                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.2673 0.784358C10.1101 0.787369 9.96029 0.851948 9.85016 0.964225C9.74003 1.0765 9.67835 1.2275 9.67838 1.38477V12.7975C9.67838 12.9567 9.74164 13.1095 9.85423 13.2221C9.96684 13.3347 10.1196 13.3979 10.2788 13.3979C10.438 13.3979 10.5908 13.3347 10.7034 13.2221C10.816 13.1095 10.8792 12.9567 10.8792 12.7975V1.38477C10.8793 1.30502 10.8633 1.22606 10.8325 1.15252C10.8017 1.07896 10.7565 1.0123 10.6996 0.9564C10.6427 0.900503 10.5752 0.856505 10.5012 0.826967C10.4271 0.797429 10.3479 0.78294 10.2681 0.784358H10.2673ZM19.3523 4.2031C19.2738 4.20537 19.1966 4.22292 19.125 4.25478L13.9723 6.55471C13.8669 6.60234 13.7775 6.67936 13.7147 6.77655C13.652 6.87374 13.6186 6.98696 13.6186 7.10263C13.6186 7.2183 13.652 7.33153 13.7147 7.42871C13.7775 7.5259 13.8669 7.60292 13.9723 7.65055L19.125 9.95784C19.2025 9.99268 19.2862 10.0109 19.3711 10.0112C19.5084 10.0108 19.6413 9.96325 19.7478 9.87673C19.8544 9.79012 19.9281 9.66964 19.9565 9.53537C19.9851 9.40109 19.9667 9.2611 19.9044 9.13873C19.8422 9.01635 19.74 8.91899 19.6147 8.86285L15.6891 7.10345L19.6147 5.35061C19.7597 5.28535 19.8728 5.16542 19.9297 5.01699C19.9866 4.86855 19.9825 4.70365 19.9182 4.55826C19.8695 4.44978 19.7898 4.35817 19.689 4.29497C19.5883 4.23176 19.4711 4.19979 19.3523 4.2031ZM0.629063 8.3882C0.712717 8.34859 0.804399 8.32884 0.896945 8.33052V8.33134C1.02776 8.33389 1.15415 8.37911 1.25691 8.46009C1.35966 8.54108 1.43315 8.65342 1.46619 8.78002C2.09462 11.1873 3.50383 13.3181 5.47307 14.8386C7.4423 16.3591 9.8603 17.1835 12.3482 17.1825C12.5075 17.1825 12.6602 17.2458 12.7728 17.3584C12.8854 17.471 12.9486 17.6237 12.9486 17.7829C12.9486 17.9421 12.8854 18.0949 12.7728 18.2075C12.6602 18.3201 12.5075 18.3833 12.3482 18.3833C6.68206 18.3833 1.72866 14.5578 0.304736 9.08104C0.28158 8.99142 0.279458 8.89766 0.298536 8.80708C0.317613 8.71651 0.357374 8.63158 0.414711 8.55891C0.472049 8.48625 0.54541 8.42782 0.629063 8.3882Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.84099 2.64336C3.92927 2.64336 3.18753 3.38413 3.18753 4.29466C3.18753 5.20579 3.92927 5.94704 4.84099 5.94704C5.75093 5.94704 6.49121 5.20579 6.49121 4.29466C6.49121 3.38413 5.75093 2.64336 4.84099 2.64336ZM3.41319 7.19855V16.3612H6.26328L6.26436 7.19855H3.41319ZM8.05167 7.19771V16.3603L10.8953 16.3614L10.8964 11.8276C10.8964 10.6639 11.0991 9.47431 12.6027 9.47431C14.0834 9.47431 14.0834 10.8781 14.0834 11.9032V16.3603L16.9303 16.3592V11.3351C16.9303 9.06782 16.5164 6.96979 13.5143 6.96979C12.1042 6.96979 11.1815 7.7668 10.8197 8.4494H10.7797L10.7797 7.19771H8.05167ZM18.3483 19.2H1.98544C1.20474 19.2 0.56958 18.5784 0.56958 17.8144V1.38454C0.56958 0.621101 1.20474 0 1.98544 0H18.3483C19.132 0 19.7696 0.621101 19.7696 1.38454V17.8144C19.7696 18.5784 19.132 19.2 18.3483 19.2Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.9939 2.56447C18.309 2.86796 17.5733 3.07302 16.7997 3.1657C17.5979 2.68816 18.195 1.93655 18.4796 1.05114C17.7298 1.49652 16.9091 1.81002 16.0534 1.97801C15.4778 1.36354 14.7156 0.956256 13.8849 0.819402C13.0542 0.682547 12.2016 0.823762 11.4594 1.22114C10.7172 1.61851 10.127 2.2498 9.78033 3.017C9.43366 3.7842 9.35 4.64438 9.54233 5.464C8.02298 5.38772 6.53667 4.99282 5.17983 4.30493C3.823 3.61705 2.62596 2.65155 1.66642 1.4711C1.33833 2.03707 1.14967 2.69325 1.14967 3.39209C1.14931 4.02121 1.30423 4.64069 1.6007 5.19557C1.89717 5.75045 2.32602 6.22357 2.8492 6.57296C2.24245 6.55365 1.64909 6.38971 1.11851 6.09477V6.14398C1.11844 7.02634 1.42365 7.88155 1.98236 8.56451C2.54106 9.24741 3.31884 9.71602 4.18372 9.89083C3.62087 10.0431 3.03075 10.0655 2.45795 9.95638C2.70196 10.7157 3.17729 11.3796 3.81738 11.8553C4.45747 12.3309 5.23028 12.5945 6.02761 12.609C4.67409 13.6717 3.00249 14.248 1.28173 14.2454C0.976918 14.2455 0.672362 14.2277 0.369629 14.1921C2.1163 15.3152 4.14955 15.9112 6.2261 15.9088C13.2555 15.9088 17.0984 10.0868 17.0984 5.03748C17.0984 4.87343 17.0942 4.70775 17.0868 4.5437C17.8343 4.00314 18.4795 3.33377 18.9922 2.56694L18.9939 2.56447Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <a href="#top" id="backToTop" title="Back to Top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </footer>
+    </div>
+
+    <script src="/script.js"></script>
+    <script src="/email.js"></script>
+    <script src="/gsap.js"></script>
+</body>
+
+</html>
