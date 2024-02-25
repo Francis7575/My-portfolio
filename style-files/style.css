@@ -240,7 +240,7 @@ main {
 
 #projects {
   margin-top: 9rem;
-  padding: 0 1rem 4.5rem 1rem;
+  padding: 1.5rem 1rem 4.5rem 1rem;
 }
 
 .projects__top {
@@ -308,7 +308,7 @@ main {
 
 #contact {
   border-bottom: 1px solid #FFF;
-  padding-bottom: 4rem;
+  padding: 1.5rem 0 4rem 0;
 }
 
 .contact__top {
