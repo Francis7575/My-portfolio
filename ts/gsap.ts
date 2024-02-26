@@ -1,3 +1,4 @@
+
 const skillsSection = gsap.timeline({ repeat: -1, repeatDelay: 2 });
 skillsSection
     .from('.skills_first_header', { duration: 1, x: '100vw', ease: 'power4.out' }, 1)
@@ -8,9 +9,16 @@ skillsSection
     .from('.git', { duration: 1, x: '100vw', ease: 'power2.out' }, 6)
     .from('.skills_second_header', { duration: 1, x: '-100vw', ease: 'power4.out' }, 7)
     .from('.react', { duration: 1, x: '-100vw', ease: 'power4.out' }, 8)
-    .from('.bootstrap', { duration: 1, x: '100vw', ease: 'power4.out' }, 9)
+    .from('.bootstrap', { duration: 1, x: '100vw', ease: 'power4.out' }, 9);
 
-const sections = [
+interface Section {
+    selector: string;
+    start: string;
+    end: string;
+    direction: string;
+}
+
+const sections: Section[] = [
     { selector: '.top_h1', start: 'top 100%', end: 'center center', direction: '-500vw' },
     { selector: '.top_p', start: 'top 100%', end: 'center center', direction: '100vw' },
     { selector: '.top_contact', start: 'top 100%', end: 'center center', direction: '-100vw' },
@@ -22,7 +30,7 @@ const sections = [
     { selector: '.four_project', start: 'top 100%', end: 'center center', direction: '100vw' }
 ];
 
-function createSectionAnimation(selector, start, end, direction) {
+function createSectionAnimation(selector: string, start: string, end: string, direction: string) {
     const timeline = gsap.timeline({
         scrollTrigger: {
             trigger: selector,
@@ -59,12 +67,12 @@ function createAnimations() {
 }
 
 function playAudio() {
-    const skillsAudio = document.getElementById('skillsAudio');
+    const skillsAudio = document.getElementById('skillsAudio') as HTMLMediaElement;
     skillsAudio.play();
 }
 
 function pauseAudio() {
-    const skillsAudio = document.getElementById('skillsAudio');
+    const skillsAudio = document.getElementById('skillsAudio') as HTMLMediaElement;
     skillsAudio.pause();
 }
 

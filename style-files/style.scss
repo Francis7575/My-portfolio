@@ -105,14 +105,14 @@ ul {
 }
 
 .oval__circle__right {
-    bottom: -12px;
-    right: -39px;
+    bottom: -16px;
+    right: -40px;
 }
 
 .profile__image {
     display: block;
     max-width: 100%;
-    padding: 0 3rem;
+    padding: 0 2.5rem;
 }
 
 .top_section {
@@ -136,6 +136,7 @@ ul {
     color: $color-white;
     font-weight: 700;
     line-height: 2.5rem;
+    max-width: 21.43rem;
 
     & span {
         background-image: linear-gradient(to right, $color-green, $color-green);
@@ -188,7 +189,7 @@ main {
         text-align: center;
         color: $color-white;
         font-size: $fs-28;
-        font-size: clamp($fs-28, .43rem + 5.64vw, $fs-88);
+        font-size: clamp($fs-28, .43rem + 5.64vw, $fs-40);
     }
 }
 
@@ -207,7 +208,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
 
 .skills__current {
@@ -222,6 +222,10 @@ main {
 
 .skills_second_header {
     margin: 2.5rem 0;
+}
+
+.fa-brands {
+    font-size: $fs-32;
 }
 
 .oval__one,
@@ -262,7 +266,7 @@ main {
 .projects__header {
     color: $color-white;
     font-size: $fs-28;
-    font-size: clamp($fs-28, .43rem + 5.64vw, $fs-88);
+    font-size: clamp($fs-28, .43rem + 5.64vw, $fs-40);
 }
 
 .image__challenge {
@@ -292,7 +296,6 @@ main {
 .projects__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 3.5rem;
     margin-top: 2.5rem;
@@ -335,7 +338,7 @@ main {
     color: $color-white;
     font-weight: 700;
     font-size: $fs-28;
-    font-size: clamp($fs-28, .43rem + 5.64vw, $fs-88);
+    font-size: clamp($fs-28, .43rem + 5.64vw, $fs-40);
 }
 
 .contact__text {
@@ -487,5 +490,165 @@ main {
 
     &:hover {
         color: $color-grey;
+    }
+}
+
+@media (min-width: 48em) {
+    .header__container {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
+
+    ul {
+        & a {
+            font-size: 1.2rem;
+        }
+    }
+
+    .top_section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .oval__circle__left,
+    .oval__circle__right {
+        display: none;
+    }
+
+    .profile__image {
+        max-width: 24rem;
+        padding: 0 1.5rem 0 0;
+    }
+
+    .top__text__content {
+        margin: 0;
+        padding: 0 0 0 1.5rem;
+    }
+
+    .skills__title {
+        font-size: $fs-24;
+    }
+
+    .fa-brands {
+        font-size: $fs-40;
+    }
+
+    .image__challenge {
+        max-width: 21.45rem;
+    }
+
+    #projects {
+        padding: 1.5rem 1.5rem 4.5rem 1.5rem;
+    }
+
+    .projects_contact {
+        font-size: $fs-22;
+    }
+
+    .projects__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.2rem 2rem;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .contact__top {
+        align-items: center;
+    }
+
+    .contact__text {
+        max-width: 26.81rem;
+        font-size: $fs-18;
+    }
+
+    .form__container {
+        padding: 0 10rem 0 10rem;
+    }
+
+    .footer__bottom__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem 2.43rem 2rem;
+
+        & a {
+            font-size: $fs-22;
+        }
+    }
+}
+
+@media (min-width: 64em) {
+    .menu__icons {
+        display: none;
+    }
+
+    #menuContainer {
+        position: static;
+        display: block;
+        width: 28rem;
+    }
+
+    .profile__image {
+        max-width: 31.25rem;
+        padding: 0 3.5rem 0 0;
+    }
+
+    .header__container {
+        padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+    }
+
+    .top__text__content {
+        padding: 0 0 0 3.5rem;
+    }
+
+    .challenge__title {
+        margin-top: .5rem;
+    }
+
+    #projects {
+        padding: 1.5rem 3.5rem 4.5rem 3.5rem;
+    }
+
+    .footer {
+        padding: 0 5rem 0 5rem;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem 0 0 0;
+    }
+
+    .contact__top {
+        align-items: flex-start;
+        text-align: left;
+        padding: 0;
+    }
+
+    #form {
+        width: 40%;
+    }
+
+    .form__container {
+        margin-top: .5rem;
+        padding: 0;
+    }
+
+    .oval__four {
+        bottom: 130px;
+        left: 0;
+    }
+
+    .oval__five {
+        bottom: 145px;
+        left: 0;
+    }
+
+    .oval__six {
+        bottom: 160px;
+        left: 0;
     }
 }
