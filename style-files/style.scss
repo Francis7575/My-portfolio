@@ -328,6 +328,7 @@ main {
 .contact__top {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.25rem;
     text-align: center;
     padding: 0 1rem;
@@ -344,6 +345,7 @@ main {
     color: $color-grey;
     font-weight: 500;
     line-height: 1.62rem;
+    max-width: 26.81rem;
 }
 
 .form__container {
@@ -560,7 +562,7 @@ main {
     .projects__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 3.2rem 2rem;
+        gap: 4rem 2rem;
     }
 
     .footer {
@@ -667,5 +669,9 @@ main {
     .second_project,
     .four_project {
         justify-self: flex-end;
+    }
+
+    #loadingIndicator {
+        padding: 0 0 2rem 0;
     }
 }
