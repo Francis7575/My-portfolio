@@ -478,6 +478,17 @@ main {
   color: #D9D9D9;
 }
 
+.audio_btn_container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0.5rem 1rem 0;
+}
+
+#playPauseBtn {
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+}
+
 @media (min-width: 48em) {
   .header__container {
     padding: 1rem 1.5rem 1rem 1.5rem;
@@ -601,5 +612,9 @@ main {
   .oval__six {
     bottom: 160px;
     left: 0;
+  }
+  .second_project,
+  .four_project {
+    justify-self: flex-end;
   }
 }/*# sourceMappingURL=style.css.map */

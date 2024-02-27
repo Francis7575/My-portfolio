@@ -58,14 +58,44 @@ function createAnimations() {
     });
 }
 
+const playBtn = document.querySelector('.fa-play');
+const pauseBtn = document.querySelector('.fa-pause');
+const playPauseBtn = document.getElementById('playPauseBtn');
+const audio = document.getElementById('skillsAudio');
+pauseBtn.style.display = 'none';
+
+function toggleAudio() {
+    if (audio.paused) {
+        audio.play();
+        playBtn.classList.remove('fa-play');
+        pauseBtn.classList.add('fa-pause');
+        pauseBtn.style.display = 'inline-block';
+        playBtn.style.display = 'none';
+
+    } else {
+        audio.pause();
+        pauseBtn.classList.remove('fa-pause');
+        playBtn.classList.add('fa-play');
+        pauseBtn.style.display = 'none';
+        playBtn.style.display = 'inline-block';
+    }
+}
+
+playPauseBtn.addEventListener('click', toggleAudio);
 function playAudio() {
-    const skillsAudio = document.getElementById('skillsAudio');
-    skillsAudio.play();
+    audio.play();
+    pauseBtn.classList.add('fa-pause');
+    playBtn.classList.remove('fa-play');
+    pauseBtn.style.display = 'inline-block';
+    playBtn.style.display = 'none';
 }
 
 function pauseAudio() {
-    const skillsAudio = document.getElementById('skillsAudio');
-    skillsAudio.pause();
+    audio.pause();
+    pauseBtn.classList.remove('fa-pause');
+    playBtn.classList.add('fa-play');
+    playBtn.style.display = 'inline-block';
+    pauseBtn.style.display = 'none';
 }
 
 ScrollTrigger.create({
